@@ -25,15 +25,15 @@ btn_toggle.onclick = () => {
 
 btn_search.onclick = () => {
   key = reset.split(" ")
-  var search = " "
+  var news = " ";
   for(let i =0; i<key.length; i++){
     if(key[i].length > length.value){
-      search += "<span style = 'color: " + color.value + "' >" + key[i] + "</span>" + " ";
+      news += "<span style = 'color: " + color.value + "' >" + key[i] + "</span>" + " ";
     }else{
-      search += key[i] + " ";
+      news += key[i] + " ";
     }
   }
-  text.innerHTML = search;
+  text.innerHTML = news;
   
 }
 
